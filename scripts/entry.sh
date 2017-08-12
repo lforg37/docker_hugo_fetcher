@@ -9,6 +9,6 @@ GIT_REPO=$1
 
 cd scratch
 rm -r *
-git clone --depth 1 $GIT_REPO src
+git clone --recursive --depth 1 $GIT_REPO src
 cd src
 hugo --cleanDestinationDir -d /build/
