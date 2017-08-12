@@ -10,8 +10,8 @@ fi
 GIT_REPO=$1
 echo "Now trying to clone git repo $1"
 cd scratch
-rm -r *
 git clone --recursive --depth 1 $GIT_REPO src
 cd src
 echo "Building the website"
-hugo --cleanDestinationDir -d /build/
+hugo --cleanDestinationDir 
+mv public/* /build/
