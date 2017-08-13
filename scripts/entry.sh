@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+#used for cleaning entry sockets
+cat <&0 > /dev/null
+
 if test "$#" -ne 2
 then
 	echo $1
