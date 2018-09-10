@@ -14,4 +14,4 @@ cd scratch
 git clone --recursive --depth 1 $GIT_REPO src
 cd src
 echo "Building the website"
-hugo -b $DOMAIN --cleanDestinationDir --destination /build 
+/usr/bin/hugo -b $DOMAIN --cleanDestinationDir --destination /build 
